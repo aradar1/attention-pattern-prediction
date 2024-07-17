@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     nostudid dataset no 6
+Instances:    89
+Attributes:   14
+              AVTYPE
+              Ethnicity
+              Gender
+              Age
+              A.Delta
+              A.Theta
+              A.Alpha1
+              A.Alpha2
+              A.Beta1
+              A.Beta2
+              A.Gamma1.
+              A.Gamma2
+              A. Attention
+              A. Mediation
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 50.23038626568735
+
+Initial starting points (random):
+
+Cluster 0: 3,English,M,31,103404.0619,23207.07965,9704.840708,9016.371681,10104.0708,10384.95575,6220.884956,5256.690265,43.185841,61.637168
+Cluster 1: 3,'Han Chinese',F,28,843128.2258,235477.7419,52784.68548,25383.75806,23203.49194,16425.00806,9440.185484,5877.572581,46.572581,45
+Cluster 2: 1,'Han Chinese',M,25,602329.5082,130768.7705,26436.2623,20617.21311,20125.62295,29251.72131,28182.78689,11690.67213,49.934426,47.270492
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                              Cluster#
+Attribute        Full Data           0           1           2
+                    (89.0)      (10.0)      (19.0)      (60.0)
+==============================================================
+AVTYPE              2.5056         2.5      2.5263         2.5
+Ethnicity      Han Chinese     English Han Chinese Han Chinese
+Gender                   M           M           F           M
+Age                25.5281          31     25.8947        24.5
+A.Delta        590513.4436  40514.5573 832323.8589 605606.6265
+A.Theta        159445.5028  19355.5755 204253.1023 168604.7508
+A.Alpha1        38593.6384   7802.8547  52268.9366  39394.9246
+A.Alpha2        28155.8624   8212.9707  40274.8902  27641.9856
+A.Beta1          20303.926   7979.9749  22147.9408  21773.9798
+A.Beta2         24252.4378   8339.9904  34062.9162  23797.8609
+A.Gamma1.       17006.5009   4581.5473  20583.6793  17944.5534
+A.Gamma2          8289.297    3537.323   6279.1539   9717.8379
+A. Attention       46.3658     55.7293     43.7063     45.6474
+A. Mediation       53.0088     60.9399     51.1024     52.2907
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      10 ( 11%)
+1      19 ( 21%)
+2      60 ( 67%)
+
